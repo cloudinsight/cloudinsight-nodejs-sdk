@@ -1,0 +1,17 @@
+{
+  "name": "oneapm-ci-sdk-js",
+  "version": "0.0.1",
+  "description": "Sdk for OneAPM Ci.",
+  "main": "index.js",
+  "scripts": {
+    "test": "todo"
+  },
+  "keywords": [
+    "oneapm",
+    "cloud",
+    "agent",
+    "sdk"
+  ],
+  "author": "oneapm.com",
+  "license": "MIT"
+}
