@@ -3,6 +3,8 @@ oneapm-ci-sdk
 
 SDK for oneapm ci.
 
+http://docs-ci.oneapm.com/api/nodejs.html
+
 Installation
 ------------
   npm install oneapm-ci-sdk
