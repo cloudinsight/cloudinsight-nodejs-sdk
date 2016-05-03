@@ -1,13 +1,15 @@
-oneapm-ci-sdk
+Cloud Insight SDK for Node.JS
 ================
 
-SDK for oneapm ci.
+SDK for Cloud Insight.
 
 http://docs-ci.oneapm.com/api/nodejs.html
 
 Installation
 ------------
-  npm install oneapm-ci-sdk
+```bash
+npm install cloudinsight
+```
 
 
 Quick Start Guide
@@ -15,7 +17,7 @@ Quick Start Guide
 
 ``` javascript
 // Require the module
-var StatsD = require( 'oneapm-ci-sdk' ).StatsD;
+var StatsD = require( 'cloudinsight' ).StatsD;
 
 // Instantiate the StatsD, with host, port and global tags specified.
 // The default host & port is 'localhost:8251'
