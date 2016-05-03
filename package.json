@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/cloudinsight/cloudinsight-nodejs-sdk/issues"
   },
-  "homepage": "https://github.com/cloudinsight/cloudinsight-nodejs-sdk#readme"
+  "homepage": "https://github.com/cloudinsight/cloudinsight-nodejs-sdk#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
