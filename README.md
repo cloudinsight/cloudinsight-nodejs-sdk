@@ -8,7 +8,7 @@ http://docs-ci.oneapm.com/api/nodejs.html
 Installation
 ------------
 ```bash
-npm install cloudinsight
+npm install cloudinsight-sdk
 ```
 
 
@@ -17,7 +17,7 @@ Quick Start Guide
 
 ``` javascript
 // Require the module
-var StatsD = require( 'cloudinsight' ).StatsD;
+var StatsD = require( 'cloudinsight-sdk' ).StatsD;
 
 // Instantiate the StatsD, with host, port and global tags specified.
 // The default host & port is 'localhost:8251'
