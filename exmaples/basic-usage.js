@@ -1,6 +1,6 @@
 /**
  *
- * CloudInsight SDK for nodejs exmaples.
+ * CloudInsight SDK for nodejs examples.
  *
  * This example shows the basic usage of the SDK.
  * @author crystaldust(juzhenatpku@gmail.com)

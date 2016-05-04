@@ -1,6 +1,6 @@
 /**
  *
- * CloudInsight SDK for nodejs exmaples.
+ * CloudInsight SDK for nodejs examples.
  *
  * This example shows how to get the air quality(dust density, PM2.5 in this example) and send it to the CloudInsight agent. 
  * After the data is sent, you can see it in the backend of CloudInsight and add it to any forms of chart for futher display.
@@ -23,7 +23,7 @@ getPM25( 'beijing', function( pm25 ) {
   statsd.gauge( 'air.beijing', parseFloat( pm25 ), ['time:gmt8', 'location:officeroom'] );
   console.log( 'beijing', pm25 );
   // We use this 'not elegent' way to make sure the two requests are finished,
-  // since we don't want any flow control libs included, this is just an exmaple.
+  // since we don't want any flow control libs included, this is just an example.
   if( ++n >= 2 ) { 
     process.exit( 0 );
   }
