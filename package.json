@@ -1,6 +1,6 @@
 {
-  "name": "cloudinsight",
-  "version": "0.0.4",
+  "name": "cloudinsight-sdk",
+  "version": "0.0.9",
   "description": "Sdk for OneAPM Ci.",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,6 @@
   "homepage": "https://github.com/cloudinsight/cloudinsight-nodejs-sdk#readme",
   "devDependencies": {
     "mocha": "^2.4.5"
-  }
+  },
+  "dependencies": {}
 }
