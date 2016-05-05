@@ -14,7 +14,7 @@ function StatsD( host, port, globalTags ) {
   this.port       = port || 8251;
   this.globalTags = globalTags;
 
-  this.socket     = dgram.createSocket( nodeVersion <= 0.10 ? 'udp4' : { type: 'udp4' } );
+  this.socket     = dgram.createSocket( nodeVersion <= 0.11 ? 'udp4' : { type: 'udp4' } );
 }
 
 StatsD.prototype.gauge = function( metric, value, tags, sampleRate, cb ) {
