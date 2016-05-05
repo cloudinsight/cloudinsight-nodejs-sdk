@@ -6,14 +6,15 @@
  * @author crystaldust(juzhenatpku@gmail.com)
  */
 
-var dgram = require( 'dgram' );
+var dgram       = require( 'dgram' );
+var nodeVersion = Number(process.version.match(/^v(\d+\.\d+)/)[1]);
 
 function StatsD( host, port, globalTags ) {
   this.host       = host || 'localhost';
   this.port       = port || 8251;
   this.globalTags = globalTags;
 
-  this.socket     = dgram.createSocket( { type: 'udp4' } );
+  this.socket     = dgram.createSocket( nodeVersion <= 0.10 ? 'udp4' : { type: 'udp4' } );
 }
 
 StatsD.prototype.gauge = function( metric, value, tags, sampleRate, cb ) {
