@@ -1,8 +1,9 @@
 Cloud Insight SDK for Node.JS
 ================
 
-[![Build Status](https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk.svg?branch=master)](https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk)
-
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Build Status][travis-image]][travis-url]
 
 Installation
 ------------
@@ -34,3 +35,12 @@ statsd.gauge('users.online', 128, [ 'mytag:myvalue' ], 0.5)
 ```
 
 For detailed information, please visit http://docs-ci.oneapm.com/api/nodejs.html
+
+
+
+[npm-image]: https://img.shields.io/npm/v/cloudinsight-sdk.svg
+[npm-url]: https://npmjs.org/package/cloudinsight-sdk
+[downloads-image]: https://img.shields.io/npm/dm/cloudinsight-sdk.svg
+[downloads-url]: https://npmjs.org/package/cloudinsight-sdk
+[travis-image]: https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk.svg?branch=master
+[travis-url]: https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk
