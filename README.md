@@ -1,9 +1,8 @@
 Cloud Insight SDK for Node.JS
 ================
 
-SDK for Cloud Insight.
+[![Build Status](https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk.svg?branch=master)](https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk)
 
-http://docs-ci.oneapm.com/api/nodejs.html
 
 Installation
 ------------
@@ -32,3 +31,6 @@ statsd.incrementBy('page.views', 100)
 
 // Record a gauge with custom tags and sample rate(50% of the time).
 statsd.gauge('users.online', 128, [ 'mytag:myvalue' ], 0.5)
+```
+
+For detailed information, please visit http://docs-ci.oneapm.com/api/nodejs.html
