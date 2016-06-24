@@ -1,4 +1,4 @@
-Cloud Insight SDK for Node.JS
+Cloudinsight SDK for Node.JS
 ================
 
 [![NPM Version][npm-image]][npm-url]
