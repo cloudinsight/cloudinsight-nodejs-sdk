@@ -4,7 +4,7 @@
   "description": "Sdk for OneAPM Ci.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "jest": {
     "collectCoverage": true,
@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/cloudinsight/cloudinsight-nodejs-sdk#readme",
   "devDependencies": {
+    "coveralls": "^2.11.15",
     "jest": "^17.0.3"
   }
 }
