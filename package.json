@@ -2,9 +2,15 @@
   "name": "cloudinsight-sdk",
   "version": "0.0.9",
   "description": "Sdk for OneAPM Ci.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha ./test/"
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**/*"
+    ]
   },
   "keywords": [
     "oneapm",
@@ -26,7 +32,6 @@
   },
   "homepage": "https://github.com/cloudinsight/cloudinsight-nodejs-sdk#readme",
   "devDependencies": {
-    "mocha": "^2.4.5"
-  },
-  "dependencies": {}
+    "jest": "^17.0.3"
+  }
 }

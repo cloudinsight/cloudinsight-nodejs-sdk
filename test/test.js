@@ -1,5 +1,5 @@
 var assert = require( 'assert' );
-var StatsD = require( '../index' ).StatsD;
+var StatsD = require( '../lib/index' ).StatsD;
 
 var statsd = new StatsD( 'localhost', 8251 );
 
