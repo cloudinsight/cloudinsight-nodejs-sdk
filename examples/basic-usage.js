@@ -8,7 +8,7 @@
  */
 
 // Require the module
-var StatsD = require( 'cloudinsight-sdk' ).StatsD;
+var StatsD = require( '../' ).StatsD;
 
 // Instantiate the StatsD, with host, port and global tags specified.
 // The default host & port is 'localhost:8251'

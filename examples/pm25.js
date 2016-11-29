@@ -2,7 +2,7 @@
  *
  * CloudInsight SDK for nodejs examples.
  *
- * This example shows how to get the air quality(dust density, PM2.5 in this example) and send it to the CloudInsight agent. 
+ * This example shows how to get the air quality(dust density, PM2.5 in this example) and send it to the CloudInsight agent.
  * After the data is sent, you can see it in the backend of CloudInsight and add it to any forms of chart for futher display.
  * Make sure that the CloudInsight agent is running happily before you run this example.
  *
@@ -12,7 +12,7 @@
 
 var zlib   = require( 'zlib' );
 var http   = require( 'http' );
-var StatsD = require( 'cloudinsight-sdk' ).StatsD;
+var StatsD = require( '../' ).StatsD;
 var statsd = new StatsD('localhost', 8251);
 
 var PM25_API_PATH_BASE = "http://feed.aqicn.org/feed/";
@@ -24,7 +24,7 @@ getPM25( 'beijing', function( pm25 ) {
   console.log( 'beijing', pm25 );
   // We use this 'not elegent' way to make sure the two requests are finished,
   // since we don't want any flow control libs included, this is just an example.
-  if( ++n >= 2 ) { 
+  if( ++n >= 2 ) {
     process.exit( 0 );
   }
 } );
