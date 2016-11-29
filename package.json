@@ -4,8 +4,8 @@
   "description": "Sdk for OneAPM Ci.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
-    "build": "webpack -p"
+    "test": "eslint src && jest && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "build:run": "webpack -p && node ./examples/pm25.js"
   },
   "jest": {
     "collectCoverage": true,
@@ -39,6 +39,7 @@
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "coveralls": "^2.11.15",
+    "eslint": "^3.11.1",
     "jest": "^17.0.3",
     "webpack": "^1.13.3"
   }

@@ -6,5 +6,8 @@
  * @author crystaldust(juzhenatpku@gmail.com)
  */
 
-const StatsD = require('./StatsD');
-exports.StatsD = StatsD;
+import StatsD from './StatsD';
+export default StatsD;
+export {
+  StatsD
+};

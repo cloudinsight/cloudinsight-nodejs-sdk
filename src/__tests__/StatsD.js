@@ -1,13 +1,12 @@
 jest.mock('dgram');
 
-const assert = require('assert');
-const StatsD = require('../').StatsD;
+import StatsD from '../';
 
 describe('StatsD', () => {
   it('constructor and close', () => {
     const statsd = new StatsD();
-    expect(statsd.host).toBe('localhost')
-    expect(statsd.port).toBe(8251)
+    expect(statsd.host).toBe('localhost');
+    expect(statsd.port).toBe(8251);
     statsd.close();
     expect(statsd.socket.close).toBeCalled();
   });
@@ -21,7 +20,7 @@ describe('StatsD', () => {
   });
 
   it('withGlobalTags', () => {
-    const statsd = new StatsD(undefined, undefined, ["a"]);
+    const statsd = new StatsD(undefined, undefined, ['a']);
     statsd.gauge('a', 1);
     expect(statsd.socket.send.mock.calls[0]).toEqual([
       new Buffer('a:1|g|#a'), 0, 8, 8251, 'localhost', undefined
@@ -88,7 +87,7 @@ describe('StatsD', () => {
     statsd.incrementBy('a', 2);
     expect(statsd.socket.send.mock.calls[0]).toEqual([
       new Buffer('a:2|c'), 0, 5, 8251, 'localhost', undefined
-    ])
+    ]);
   });
 
   it('incrementByDefault', () => {
@@ -96,7 +95,7 @@ describe('StatsD', () => {
     statsd.incrementBy('a');
     expect(statsd.socket.send.mock.calls[0]).toEqual([
       new Buffer('a:1|c'), 0, 5, 8251, 'localhost', undefined
-    ])
+    ]);
   });
 
   it('decrementBy', () => {
@@ -104,7 +103,7 @@ describe('StatsD', () => {
     statsd.decrementBy('a', -2);
     expect(statsd.socket.send.mock.calls[0]).toEqual([
       new Buffer('a:-2|c'), 0, 6, 8251, 'localhost', undefined
-    ])
+    ]);
   });
 
   it('decrementByDefault', () => {
@@ -112,7 +111,7 @@ describe('StatsD', () => {
     statsd.decrementBy('a');
     expect(statsd.socket.send.mock.calls[0]).toEqual([
       new Buffer('a:-1|c'), 0, 6, 8251, 'localhost', undefined
-    ])
+    ]);
   });
 
 });
