@@ -1,9 +1,10 @@
 Cloudinsight SDK for Node.JS
 ================
-
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
+[![](https://img.shields.io/travis/cloudinsight/cloudinsight-nodejs-sdk.svg)](https://travis-ci.org/cloudinsight/cloudinsight-nodejs-sdk)
+[![](https://img.shields.io/npm/v/cloudinsight-sdk.svg)](https://www.npmjs.com/package/cloudinsight-sdk)
+[![](https://img.shields.io/coveralls/cloudinsight/cloudinsight-nodejs-sdk.svg)](https://coveralls.io/github/cloudinsight/cloudinsight-nodejs-sdk)
+[![](https://img.shields.io/npm/dm/cloudinsight-sdk.svg)](http://npm-stat.com/charts.html?package=cloudinsight-sdk)
+[![](https://img.shields.io/npm/l/cloudinsight-sdk.svg)](https://github.com/cloudinsight/cloudinsight-nodejs-sdk/blob/master/LICENSE)
 
 Installation
 ------------
