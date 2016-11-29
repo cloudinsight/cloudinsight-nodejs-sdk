@@ -1,6 +1,6 @@
 {
   "name": "cloudinsight-sdk",
-  "version": "0.0.9",
+  "version": "0.9.0",
   "description": "Sdk for OneAPM Ci.",
   "main": "lib/index.js",
   "scripts": {
